@@ -45,8 +45,8 @@ def ifft(X):
 
 	x = [0] * N
 
-	even = fft(X[:N:2])
-	odd = fft(X[1:N:2])
+	even = ifft(X[:N:2])
+	odd = ifft(X[1:N:2])
 
 	for k in range(N//2):
 		w = math.e**(2j*math.pi * k/N)
@@ -136,11 +136,11 @@ def main():
 	f.write(tformat(inv))
 	f.close()
 
-	print("Algoritmo de Cooley-Tukey:\n" + str(OP) + " operaciones.\n" + str(TIME) + " segundos.\n\n")
+	print("Cooley-Tukey algorithm:\n" + str(OP) + " operations.\n" + str(TIME) + " seconds.\n\n")
 	TIME = time()
 	naive(x)	
 	TIME = time() - TIME
-	print("Algoritmo según la definición:\n" + str(OP) + " operaciones.\n" + str(TIME) + " segundos.\n\n")
+	print("Definition-based algorithm:\n" + str(OP) + " operations.\n" + str(TIME) + " seconds.\n\n")
 
 
 if __name__ == "__main__":
