@@ -93,7 +93,7 @@ def readWave(name):
 
 	return map(lambda x : float(x[:-1]), f)
 
-# Exit text format for the DFT
+# Output text format for the DFT
 def fformat(X):
 	s = "Fourier's transform: (" + str(X)[1:-1] + ")" + "\n\n"
 	for i in range(len(X)):
@@ -102,7 +102,7 @@ def fformat(X):
 
 	return s
 
-# Exit text format fir the inverse DFT
+# Output text format for the inverse DFT
 def tformat(x):
 	return "Inverse Fourier's transform: (" + str(x)[1:-1] + ")" + "\n"
 
