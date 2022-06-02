@@ -65,7 +65,7 @@ def naive(x):
 
 	for k in range(N):
 		for n in range(k):
-			X[k] += x[n] * math.e**(-2j*math.pi * k*n/N )
+			X[k] += x[n] * math.e**(-2j*math.pi * k*n/N)
 			OP += 1
 
 	return X
