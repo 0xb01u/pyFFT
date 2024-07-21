@@ -12,4 +12,5 @@ This program was developed as part of a college task for a course focused on alg
 - Add a graphic output.
 - Add more control over the output options.
 - Improve the programs' invocation by using the `argparse` module.
+
 These TODO tasks may or may not be completed somewhen in the future.
